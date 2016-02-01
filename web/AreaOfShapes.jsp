@@ -49,6 +49,6 @@
     <center><img src="triangle.jpg"/></center>
     <p>
         <c:out value="${myTriangle}"></c:out>
-        <img src="trifecta.gif"/>
+        
 </body>
 </html>
