@@ -25,6 +25,7 @@
     <p>
         <c:out value="${myRectangle}"></c:out>
     </p>
+    <hr>
     <center><h2>Area of Circle</h2></center>
     <form id="circle" method="POST" action="ActionGenerator?calculator=areaOfCircle">
         <label>Enter Radius</label>
@@ -36,6 +37,7 @@
     <p>
     <c:out value="${myCircle}"></c:out>
     </p>
+    <hr>
     <center><h2>Area of Triangle</h2></center>
     <form id ="triangle" method="POST" action="ActionGenerator?calculator=areaOfTriangle">
         <label>Enter Base</label>
