@@ -16,9 +16,9 @@
     <center><h1>Area of Rectangle</h1></center>
     <form id="rectangle" method="POST" action="ActionGenerator?calculator=areaOfRectangle">
         <label>Enter Length</label>
-        <input type="text" name="length" value=""/><br>
+        <input type="number" name="length" value=""/><br>
         <label>Enter Width</label>
-        <input type="text" name="width" value=""/><br>
+        <input type="number" name="width" value=""/><br>
         <input type="submit" name="submit" value="Calculate"/>
     </form>
     <p>
@@ -38,7 +38,7 @@
     <center><h1>Area of Circle</h1></center>
     <form id="circle" method="POST" action="ActionGenerator?calculator=areaOfCircle">
         <label>Enter Radius</label>
-        <input type="text" name="radius" value=""/><br>
+        <input type="number" name="radius" value=""/><br>
 
         <input type="submit" name="submit" value="Calculate"/>
     </form>
@@ -59,9 +59,9 @@
     <center><h1>Area of Triangle</h1></center>
     <form id ="triangle" method="POST" action="ActionGenerator?calculator=areaOfTriangle">
         <label>Enter Base</label>
-        <input type="text" name="base" value=""/><br>
+        <input type="number" name="base" value=""/><br>
         <label>Enter Height</label>
-        <input type="text" name="height" value=""/><br>
+        <input type="number" name="height" value=""/><br>
         <input type="submit" name="submit" value="Calculate"/>
     </form>
     <p>
