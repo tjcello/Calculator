@@ -21,9 +21,10 @@
         <input type="number" name="width" value=""/><br>
         <input type="submit" name="submit" value="Calculate"/>
     </form>
+    <center><img src="rectangle.gif"/></center>
     <p>
         <%
-            Object responseObj1 = request.getAttribute("myMsg1");
+            Object responseObj1 = request.getAttribute("myRectangle");
             Object errObj1 = request.getAttribute("errorMsg");
 
             if (responseObj1 != null) {
@@ -42,9 +43,10 @@
 
         <input type="submit" name="submit" value="Calculate"/>
     </form>
+    <center><img src="circle.jpg"/></center>
     <p>
         <%
-            Object responseObj2 = request.getAttribute("myMsg2");
+            Object responseObj2 = request.getAttribute("myCircle");
             Object errObj2 = request.getAttribute("errorMsg");
 
             if (responseObj2 != null) {
@@ -64,9 +66,10 @@
         <input type="number" name="height" value=""/><br>
         <input type="submit" name="submit" value="Calculate"/>
     </form>
+    <center><img src="triangle (1).jpg"/></center>
     <p>
         <%
-            Object responseObj3 = request.getAttribute("myMsg3");
+            Object responseObj3 = request.getAttribute("myTriangle");
             Object errObj3 = request.getAttribute("errorMsg");
 
             if (responseObj3 != null) {

@@ -5,8 +5,8 @@
     border-width: thin;
     padding-left: 30px;
     padding-right: 30px;
-    margin-right: 500px;
-    margin-left: 500px;
+    margin-right: 450px;
+    margin-left: 450px;
     font-size: 18px;
     font-style:italic;
     font-weight:bold;
@@ -19,8 +19,8 @@
     border-width: thin;
     padding-left: 30px;
     padding-right: 30px;
-    margin-right: 500px;
-    margin-left: 500px;
+    margin-right: 4500px;
+    margin-left: 450px;
     font-size: 18px;
     font-style:italic;
     font-weight:bold;
@@ -33,12 +33,20 @@
     border-width: thin;
     padding-left: 30px;
     padding-right: 30px;
-    margin-right: 500px;
-    margin-left: 500px;
+    margin-right: 450px;
+    margin-left: 450px;
     font-size: 18px;
     font-style:italic;
     font-weight:bold;
 }
 p{
     text-align: center;
+    margin: none;
+}
+
+img{
+    height: 200px;
+    width: 200px;
+    
+    
 }

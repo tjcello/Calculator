@@ -39,14 +39,14 @@ public class ActionGenerator extends HttpServlet {
             ActionService actSrv = new ActionService();
             String responseMsg = actSrv.calculateAreaOfRectangle(width, length);
 
-            request.setAttribute("myMsg1", responseMsg);
+            request.setAttribute("myRectangle", responseMsg);
             
             } else if (theCalc.equals("areaOfCircle")){
                 String radius = request.getParameter("radius");
                 ActionService actSrv = new ActionService();
             String responseMsg = actSrv.calculateAreaofCircle(radius);
             
-            request.setAttribute("myMsg2", responseMsg);
+            request.setAttribute("myCircle", responseMsg);
             
             } else if (theCalc.equals("areaOfTriangle")){
                 String base = request.getParameter("base");
@@ -54,7 +54,7 @@ public class ActionGenerator extends HttpServlet {
                 ActionService actSrv = new ActionService();
                 String responseMsg = actSrv.calculateAreaOfTriangle(base, height);
                 
-                request.setAttribute("myMsg3", responseMsg);
+                request.setAttribute("myTriangle", responseMsg);
             }    
 
             
