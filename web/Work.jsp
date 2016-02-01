@@ -3,7 +3,7 @@
     Created on : Feb 1, 2016, 12:18:59 PM
     Author     : Thomas
 --%>
-
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -22,18 +22,7 @@
         <input type="submit" name="submit" value="Calculate"/>
     </form>
     <p>
-        <%
-            Object responseObj1 = request.getAttribute("myMsg1");
-            Object errObj1 = request.getAttribute("errorMsg");
-
-            if (responseObj1 != null) {
-                out.println(responseObj1.toString());
-            }
-
-            if (errObj1 != null) {
-                out.println(errObj1.toString());
-            }
-        %>
+        <c:out value="${myRectangle}"></c:out>
     </p>
     <center><h1>Area of Circle</h1></center>
     <form id="circle" method="POST" action="ActionGenerator?calculator=areaOfCircle">
@@ -43,18 +32,7 @@
         <input type="submit" name="submit" value="Calculate"/>
     </form>
     <p>
-        <%
-            Object responseObj2 = request.getAttribute("myMsg2");
-            Object errObj2 = request.getAttribute("errorMsg");
-
-            if (responseObj2 != null) {
-                out.println(responseObj2.toString());
-            }
-
-            if (errObj2 != null) {
-                out.println(errObj2.toString());
-            }
-        %>
+    <c:out value="${myCircle}"></c:out>
     </p>
     <center><h1>Area of Triangle</h1></center>
     <form id ="triangle" method="POST" action="ActionGenerator?calculator=areaOfTriangle">
@@ -65,18 +43,7 @@
         <input type="submit" name="submit" value="Calculate"/>
     </form>
     <p>
-        <%
-            Object responseObj3 = request.getAttribute("myMsg3");
-            Object errObj3 = request.getAttribute("errorMsg");
-
-            if (responseObj3 != null) {
-                out.println(responseObj3.toString());
-            }
-
-            if (errObj3 != null) {
-                out.println(errObj3.toString());
-            }
-        %>
+        <c:out value="${myTriangle}"></c:out>
     </p>
 </body>
 </html>
