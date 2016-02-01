@@ -59,7 +59,7 @@ public class ActionGenerator extends HttpServlet {
 
             
             RequestDispatcher view
-                    = request.getRequestDispatcher("/Work.jsp");
+                    = request.getRequestDispatcher("/AreaOfShapes.jsp");
             view.forward(request, response);
             
 
