@@ -1,0 +1,41 @@
+#rectangle{
+    background-color: orange;
+    text-align: center;
+    border-style: dotted;
+    border-width: thin;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-right: 500px;
+    margin-left: 500px;
+    font-size: 18px;
+    font-style:italic;
+    font-weight:bold;
+}
+
+#circle{
+    background-color: blue;
+    text-align: center;
+    border-style: dotted;
+    border-width: thin;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-right: 500px;
+    margin-left: 500px;
+    font-size: 18px;
+    font-style:italic;
+    font-weight:bold;
+}
+
+#triangle{
+    background-color: yellowgreen;
+    text-align: center;
+    border-style: dotted;
+    border-width: thin;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-right: 500px;
+    margin-left: 500px;
+    font-size: 18px;
+    font-style:italic;
+    font-weight:bold;
+}
