@@ -15,7 +15,7 @@ public class ActionService {
         double w = Double.parseDouble(width);
         double l = Double.parseDouble(length);
         double a = l * w;
-        String area = String.valueOf(a);
+        String area = "The Area of the Rectangle is: " + String.valueOf(a);
 
         return area;
 
@@ -24,7 +24,7 @@ public class ActionService {
     public String calculateAreaofCircle(String radius) {
         double r = Double.parseDouble(radius);
         double a = (int) (Math.PI * Math.pow(r, 2) * 100) / 100.0;
-        String area = String.valueOf(a);
+        String area = "The Area of the Circle is: " + String.valueOf(a);
         
         return area;
     }
@@ -33,7 +33,7 @@ public class ActionService {
         double b = Double.parseDouble(base);
         double h = Double.parseDouble(height);
         double a = .5 * b * h;
-        String area = String.valueOf(a);
+        String area = "The Area of the Triangle is: " + String.valueOf(a);
         
         return area;
     }
