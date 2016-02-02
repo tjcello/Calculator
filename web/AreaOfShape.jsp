@@ -19,7 +19,7 @@
         <input type="number" name="length" value=""/><br>
         <label>Enter Width</label>
         <input type="number" name="width" value=""/><br>
-        <input type="submit" name="submit" value="Calculate"/>
+        <input id="button" type="submit" name="submit" value="Calculate"/>
     </form>
     <center><img src="rectangle.gif"/></center>
     <p>
@@ -41,7 +41,7 @@
         <label>Enter Radius</label>
         <input type="number" name="radius" value=""/><br>
 
-        <input type="submit" name="submit" value="Calculate"/>
+        <input id="button" type="submit" name="submit" value="Calculate"/>
     </form>
     <center><img src="circle.jpg"/></center>
     <p>
@@ -64,7 +64,7 @@
         <input type="number" name="base" value=""/><br>
         <label>Enter Height</label>
         <input type="number" name="height" value=""/><br>
-        <input type="submit" name="submit" value="Calculate"/>
+        <input id="button" type="submit" name="submit" value="Calculate"/>
     </form>
     <center><img src="triangle (1).jpg"/></center>
     <p>
