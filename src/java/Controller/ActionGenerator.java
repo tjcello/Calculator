@@ -39,14 +39,14 @@ public class ActionGenerator extends HttpServlet {
             ActionService actSrv = new ActionService();
             String responseMsg = actSrv.calculateAreaOfRectangle(width, length);
 
-            request.setAttribute("myRectangle", responseMsg);
+            request.setAttribute("myMsg1", responseMsg);
             
             } else if (theCalc.equals("areaOfCircle")){
                 String radius = request.getParameter("radius");
                 ActionService actSrv = new ActionService();
             String responseMsg = actSrv.calculateAreaofCircle(radius);
             
-            request.setAttribute("myCircle", responseMsg);
+            request.setAttribute("myMsg2", responseMsg);
             
             } else if (theCalc.equals("areaOfTriangle")){
                 String base = request.getParameter("base");
@@ -54,12 +54,8 @@ public class ActionGenerator extends HttpServlet {
                 ActionService actSrv = new ActionService();
                 String responseMsg = actSrv.calculateAreaOfTriangle(base, height);
                 
-                request.setAttribute("myTriangle", responseMsg);
-            }  
-            
-            } catch (Exception e) {
-            request.setAttribute("errorMsg", e.getMessage());
-        }
+                request.setAttribute("myMsg3", responseMsg);
+            }    
 
             
             RequestDispatcher view
@@ -68,7 +64,7 @@ public class ActionGenerator extends HttpServlet {
             
 
         
-        
+        }
     }
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">

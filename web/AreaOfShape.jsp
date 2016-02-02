@@ -19,12 +19,12 @@
         <input type="number" name="length" value=""/><br>
         <label>Enter Width</label>
         <input type="number" name="width" value=""/><br>
-        <input id="button" type="submit" name="submit" value="Calculate"/>
+        <input type="submit" name="submit" value="Calculate"/>
     </form>
     <center><img src="rectangle.gif"/></center>
     <p>
         <%
-            Object responseObj1 = request.getAttribute("myRectangle");
+            Object responseObj1 = request.getAttribute("myMsg1");
             Object errObj1 = request.getAttribute("errorMsg");
 
             if (responseObj1 != null) {
@@ -41,12 +41,12 @@
         <label>Enter Radius</label>
         <input type="number" name="radius" value=""/><br>
 
-        <input id="button" type="submit" name="submit" value="Calculate"/>
+        <input type="submit" name="submit" value="Calculate"/>
     </form>
     <center><img src="circle.jpg"/></center>
     <p>
         <%
-            Object responseObj2 = request.getAttribute("myCircle");
+            Object responseObj2 = request.getAttribute("myMsg2");
             Object errObj2 = request.getAttribute("errorMsg");
 
             if (responseObj2 != null) {
@@ -64,12 +64,12 @@
         <input type="number" name="base" value=""/><br>
         <label>Enter Height</label>
         <input type="number" name="height" value=""/><br>
-        <input id="button" type="submit" name="submit" value="Calculate"/>
+        <input type="submit" name="submit" value="Calculate"/>
     </form>
     <center><img src="triangle (1).jpg"/></center>
     <p>
         <%
-            Object responseObj3 = request.getAttribute("myTriangle");
+            Object responseObj3 = request.getAttribute("myMsg3");
             Object errObj3 = request.getAttribute("errorMsg");
 
             if (responseObj3 != null) {
