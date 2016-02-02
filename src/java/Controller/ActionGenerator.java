@@ -55,7 +55,11 @@ public class ActionGenerator extends HttpServlet {
                 String responseMsg = actSrv.calculateAreaOfTriangle(base, height);
                 
                 request.setAttribute("myTriangle", responseMsg);
-            }    
+            }  
+            
+            } catch (Exception e) {
+            request.setAttribute("errorMsg", e.getMessage());
+        }
 
             
             RequestDispatcher view
@@ -64,7 +68,7 @@ public class ActionGenerator extends HttpServlet {
             
 
         
-        }
+        
     }
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
